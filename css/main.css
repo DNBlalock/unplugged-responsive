@@ -86,7 +86,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
+
+   /* General Styles */
 
 /* Setting root font-size to rems is more accessible, 
 allows site visitor to set base font-size in their browser settings */
@@ -95,10 +96,10 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
+  font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
@@ -115,21 +116,29 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
   font-weight: 500;
+  font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
   font-weight: 500;
+  font-size: 1.125em;
   margin: 20px 0;
 }
 
 p {
   font-size: 0.875em;
   line-height: 1.285;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 address {
@@ -150,7 +159,7 @@ header {
   background-color: #202322;
 }
 
-/* An element can be both a parent and child when it comes to Flexbox - which is necessary for the .header content-wrapper */
+/* An element can be both a parent and child when it comes to Flexbox - which is necessary for the header content-wrapper */
 header .content-wrapper {
   margin: 0;
   display: flex;
@@ -159,24 +168,28 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+header figure {
+  width: 60%;
+}
+
 .header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
   background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.125em;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 header nav ul li {
@@ -224,29 +237,31 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url("../img/unplugged-retreat.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
 
 .hero-area h1 {
   font-size: 2.25em;
-  font-weight: 500;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
-  background-color: #527158;
 }
 
 aside .form {
   margin-top: 30px;
 }
-
 
 input[type=text] {
   box-sizing: border-box;
@@ -273,10 +288,11 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url("../img/unplugged-retreat-features.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
-
 
 .features h2 {
   margin-bottom: 60px;
@@ -295,18 +311,17 @@ input[type=button] {
 }
 
 .features p {
-  margin: 0;
   text-align: center;
+  margin: 0;
 }
 
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  background-color: #2a423a;
 }
-
 
 .reviews h2 {
   margin-bottom: 40px;
@@ -323,15 +338,15 @@ input[type=button] {
    ========================================================================== */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
-  background-color: #527158;
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -343,9 +358,9 @@ input[type=button] {
    ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
-  background-color: #527158
 }
 
 .faq .content-wrapper {
@@ -456,7 +471,7 @@ input[type=button] {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
   /* Tablet Styles here */
 
   /* General Styles */
@@ -475,7 +490,7 @@ input[type=button] {
     line-height: 1.25;
   }
 
-  /* Header Styles */
+  /* Header */
   header {
     padding: 33px 0;
   }
@@ -502,6 +517,10 @@ input[type=button] {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -541,7 +560,6 @@ input[type=button] {
   }
 
   /* Reviews */
-
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -551,6 +569,7 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -638,7 +657,6 @@ input[type=button] {
     font-size: 0.875em;
     line-height: 1.125;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
