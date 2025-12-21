@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- Font Awesome link-->
+  <script src="https://kit.fontawesome.com/b4b4a92b81.js" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +35,7 @@
   <header>
     <div class="content-wrapper">
       <figure>
-        <a href="#">
+        <a href="index.html">
           <img src="img/unpluggedlogo.png" alt="unplugged logo">
         </a>
       </figure>
@@ -65,7 +67,8 @@
         </div>
         <div class="form">
           <h3>Find out more</h3>
-          <input type="text" name="name" value="name@email.com">
+          <label for="name">Enter your email address to receive our itinerary:</label>
+          <input type="text" name="name" id="name" value="name@email.com">
           <input type="button" value="Download Itinerary">
         </div>
       </div>
@@ -78,37 +81,49 @@
         <!-- Add your Features content here-->
         <div class="features-items">
           <article>
-            <p class="fontawesome-icon"></p>
+            <p class="fontawesome-icon">
+              <i class="fas fa-campground"></i>
+            </p>
             <p class="features-item-description">
               Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.
             </p>
           </article>
           <article>
-            <p class="fontawesome-icon"></p>
+            <p class="fontawesome-icon">
+              <i class="fas fa-bed"></i>
+            </p>
             <p class="features-item-description">
               12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.
             </p>
           </article>
           <article>
-            <p class="fontawesome-icon"></p>
+            <p class="fontawesome-icon">
+              <i class="fas fa-utensils"></i>
+            </p>
             <p class="features-item-description">
               Private chef team providing on demand meals - just like your team kitchen.
             </p>
           </article>
           <article>
-            <p class="fontawesome-icon"></p>
+            <p class="fontawesome-icon">
+              <i class="fas fa-shoe-prints"></i>
+            </p>
             <p class="features-item-description">
               5 outdoor obstacle courses, including private beach ½ mile from bungalow.
             </p>
           </article>
           <article>
-            <p class="fontawesome-icon"></p>
+            <p class="fontawesome-icon">
+              <i class="fas fa-smile"></i>
+            </p>
             <p class="features-item-description">
               Retreat facilitator to manage your day to day activities so you all get a chance to reset.
             </p>
           </article>
           <article>
-            <p class="fontawesome-icon"></p>
+            <p class="fontawesome-icon">
+              <i class="fas fa-wifi"></i>
+            </p>
             <p class="features-item-description">
               Dedicated computer room for times that you must wifi.
             </p>
@@ -122,7 +137,7 @@
         <h2>Be a better team in 5 days, like this one.</h2>
         <article>
           <figure>
-            <img src="img/unplugged-retreat-lacrue.jpg" alt="LaCrue Bottling Co. Group Photo">
+            <img src="img/unplugged-retreat-lacrue.jpg" alt="Group of happy people at an outdoor retreat">
           </figure>
           <div>
             <h3>LaCrue Bottling Co.
@@ -156,9 +171,21 @@
         <div class="social">
           <h4>Social</h4>
           <div class="social-icons">
-            <p><a href="https://www.facebook.com" target="_blank" rel="noopener"></a></p>
-            <p><a href="https://www.twitter.com" target="_blank" rel="noopener"></a></p>
-            <p><a href="https://www.instagram.com" target="_blank" rel="noopener"></a></p>
+            <p>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </p>
           </div>
         </div>
       </div>
