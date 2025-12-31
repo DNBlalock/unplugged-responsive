@@ -253,7 +253,7 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url("../img/unplugged-retreat.jpg");
+  background: url("../img/unplugged-retreat.jpg") #000000;
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -306,7 +306,7 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url("../img/unplugged-retreat-features.jpg");
+  background: url("../img/unplugged-retreat-features.jpg") #000000;
   background-size: cover;
   background-position: center;
   display: flex;
